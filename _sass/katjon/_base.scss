@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Play|EB+Garamond|Source+Sans+Pro|Source+Code+Pro');
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+body {
+    background-color: $main-bg;
+    color: $main-color;
+    font-family: 'Source Sans Pro', serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', cursive;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+figure {
+    margin-left: 24px;
+    overflow: auto;
+}
+
+code,
+pre {
+    font-family: 'Fira Code', monospace;
+}
+
+pre {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+    header & {
+        color: $nav-color;
+    }
+
+    main & {
+        color: $accent;
+    }
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $nav-bg;
+    color: $nav-color;
+    padding: 1.5em 1.5em 0 1.5em;
+
+    text-shadow: 2px 2px black;
+
+    .brand {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        font-family: 'EB Garamond', serif;
+        font-weight: 800;
+        font-size: 2em;
+        line-height: 1em;
+
+        .katjon {
+            color: lighten($accent, 10%);
+        }
+    }
+
+    nav > ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            padding: 0.8em;
+
+            &:not(:first-child) {
+                &::before {
+                    content: '|';
+                    padding-right: 24px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100vw;
+    text-align: justify;
+
+    .post-list {
+        list-style: none;
+        padding-left: 0;
+
+        .post-meta {
+            color: rgba($main-color, 0.6);
+        }
+
+        .post-title {
+            margin: 0;
+        }
+    }
+}
+
+figure {
+    &.caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border: 2px solid rgba($main-color, 0.6);
+            max-width: 400px;
+        }
+    }
+
+    &.task {
+        border: 2px solid rgba($main-color, 0.6);
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+code.highlighter-rouge {
+    background: none;
+    color: $main-color;
+}

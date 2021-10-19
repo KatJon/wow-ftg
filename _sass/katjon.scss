@@ -1,0 +1,23 @@
+// COPIED FROM MINIMA THEME
+$content-width:    800px !default;
+$spacing-unit:     30px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$main-bg: #FFF;
+$main-color: #333;
+$nav-bg: #333;
+$nav-color: darken(#FFF, 10%);
+
+$accent: #026e00;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import "katjon/base";
+@import "katjon/post";
+@import "katjon/syntax-highlighting";
