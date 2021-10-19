@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Fregge &lt;For the Gnomes&gt;
+&lt;For the Gnomes&gt;
 ===
 
-This page is a spot for random posts about WoW, theorycrafting and guild events.
+This page is a spot for posts regarding guild affairs but also random WoW issues and theorycrafting.

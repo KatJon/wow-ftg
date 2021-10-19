@@ -18,14 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fregge<For the Gnomes>
+title: For the Gnomes
+displaytitle: For the Gnomes
 email: szywro5(at)gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Fregge's WoW related content.
+  Site dedicated to <For the Gnomes> guild affairs, WoW theorycrafting and
+  other WoW related content. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  KatJon
+github_username:  for-the-gnomes
 
 # Build settings
 # theme: minima
@@ -54,3 +55,6 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - README.md

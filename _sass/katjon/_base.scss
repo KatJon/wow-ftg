@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Play|EB+Garamond|Source+Sans+Pro|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Play|EB+Garamond|Source+Sans+Pro|Source+Code+Pro');
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+@font-face {
+    font-family: 'LifeCraft';
+    src: url(LifeCraft.ttf) format('truetype');
+}
 
 body {
     background-color: $main-bg;
@@ -52,21 +57,19 @@ header {
     color: $nav-color;
     padding: 1.5em 1.5em 0 1.5em;
 
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 
     .brand {
         display: block;
         width: 100%;
         text-align: center;
 
-        font-family: 'EB Garamond', serif;
+        font-family: 'LifeCraft', serif;
         font-weight: 800;
         font-size: 2em;
         line-height: 1em;
-
-        .katjon {
-            color: lighten($accent, 10%);
-        }
+ 
+        color: lighten($accent, 10%);
     }
 
     nav > ul {
